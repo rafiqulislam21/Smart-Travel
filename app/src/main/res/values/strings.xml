@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Travel Guide</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="screen_clear">Screen cleared</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_show_place_map">Map</string>
+</resources>

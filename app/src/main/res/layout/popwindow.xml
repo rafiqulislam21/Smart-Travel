@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/deep_orange_primary">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="About app"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="An Android app for smart travel guide is designed in this project. The purpose of this application is to provide tourism based information to the user very conveniently. The system uses the mash-up technology and overcomes the limitations of mobiles. It will make easier daily Travelling Life. Happy Travelling.
+"
+        />
+
+</RelativeLayout>

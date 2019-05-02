@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_topPlaces">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Places"
+        android:textSize="30sp"
+        android:textColor="@color/darkcyan"
+        android:gravity="center_horizontal"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:id="@+id/myrecyleview"
+            android:layout_gravity="center_horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+    <!--
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/mainGrid">
+
+
+                            <android.support.v7.widget.CardView
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:id="@+id/crdPlace_1"
+                                android:layout_width="380dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center_horizontal">
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/txtPlacename_1"
+                                        android:textStyle="bold"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Place name 1"/>
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/lightgray"
+                                        android:layout_margin="10dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/txtPlaceDetails_1"
+                                        android:gravity="center"
+                                        android:text="Add place details "
+                                        android:padding="5dp"
+                                        android:textColor="@android:color/darker_gray"/>
+
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_2"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_2"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 1"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_2"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_3"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_3"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 1"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_3"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_4"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_4"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 1"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_4"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_5"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_5"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 1"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_5"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_6"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_6"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 1"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_6"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_7"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_7"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 7"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_7"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_8"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_8"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 8"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_8"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_9"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_9"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 9"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_9"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/crdPlace_10"
+                            android:layout_width="380dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_horizontal">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlacename_10"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Place name 10"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/lightgray"
+                                    android:layout_margin="10dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtPlaceDetails_10"
+                                    android:gravity="center"
+                                    android:text="Add place details "
+                                    android:padding="5dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </GridLayout>
+
+
+
+                </ScrollView>
+
+
+     -->
+        </LinearLayout>

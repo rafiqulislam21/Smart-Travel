@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "918504916855",
+    "firebase_url": "https://smart-travel-32227.firebaseio.com",
+    "project_id": "smart-travel-32227",
+    "storage_bucket": "smart-travel-32227.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918504916855:android:b44279603d7a76a3",
+        "android_client_info": {
+          "package_name": "com.example.ribijoy.smarttravelguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918504916855-97u3crn4gfdupces3e6hu4pioesdbtd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ribijoy.smarttravelguide",
+            "certificate_hash": "9c05275e97b0c8a7abb830ed76d371104f9a8d27"
+          }
+        },
+        {
+          "client_id": "918504916855-hl517gi47dlepn2tfir9rjmcta1v6o57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATElSdCirKL_X2tpyX_0gTNWcfqw0pOBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918504916855-hl517gi47dlepn2tfir9rjmcta1v6o57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

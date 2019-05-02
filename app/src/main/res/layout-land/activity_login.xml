@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/darkcyan"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="#fff"
+            android:text="Welcome to Smart Travel"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:text="This a app which will make easier your travelling life. Join us and enjoy."
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    />
+                <Button
+                    android:id="@+id/btnLmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple2"
+                    android:text="Learn More"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="35dp"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorLink="@color/darkcyan"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorLink="@color/darkcyan"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/tvInfo"
+            android:textColor="@color/black"
+            android:text="Attempt Left 5"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple"
+                android:drawableRight="@drawable/ic_person_add_black_24dp"
+                android:text="SignUp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5sp"
+                        android:paddingTop="5sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember Me."
+                        android:paddingRight="80sp"
+                        android:paddingTop="5sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvForgot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/google_red"
+                        android:paddingTop="5sp"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+        !-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
